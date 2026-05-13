@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TripTally – Track Every Journey, Every Expense</title>
+  <meta name="description" content="TripTally is the ultimate travel expense tracker. Organize trips, track budgets in real-time, convert currencies instantly, and get smart spending insights – all in one beautiful app." />
+  <meta name="keywords" content="travel expense tracker, trip budget app, currency converter, travel finance, TripTally" />
+  <meta property="og:title" content="TripTally – Track Every Journey, Every Expense" />
+  <meta property="og:description" content="The smartest way to manage your travel budget. Available on Android." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───────── NAV ───────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-icon">✈</div>
+        <span>TripTally</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#download">Download</a>
+    </div>
+  </nav>
+
+  <!-- ───────── HERO ───────── -->
+  <section id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Now Available on Android
+      </div>
+      <h1 class="hero-title">
+        Track Every Journey,<br />
+        <span class="gradient-text">Every Expense.</span>
+      </h1>
+      <p class="hero-sub">
+        TripTally is the smart travel companion that keeps your budget in check — 
+        organize trips, log expenses by category, convert currencies live, and 
+        get beautiful insights right at your fingertips.
+      </p>
+      <div class="hero-actions">
+        <a href="https://play.google.com/store" target="_blank" id="hero-play-btn" class="btn-primary">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.2.8.22 1.2.05l13.1-7.56-2.9-2.9L3.18 23.76zm16.1-9.3L5.44 6.24l-2.26 2.26 11.22 11.22 4.88-2.82a1.4 1.4 0 0 0 0-2.44zm-1.44-8.18L5.44 0c-.4-.17-.83-.15-1.2.05l11.4 11.4 2.2-2.17zm-13.7.26L2.83 7.8c-.5.28-.83.8-.83 1.4v5.6c0 .6.33 1.12.83 1.4l1.31.76 11.13-11.13L4.14 6.54z"/></svg>
+          Get it on Google Play
+        </a>
+        <a href="#screenshots" class="btn-secondary">
+          See Screenshots
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Currencies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">14+</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Free to Start</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-phone-wrap">
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <img src="../screenshot/Screenshot_20260508_094841.jpg" alt="TripTally Home Screen" class="phone-screen active" id="phoneImg" />
+        </div>
+        <div class="phone-glow"></div>
+      </div>
+      <div class="phone-carousel-dots">
+        <button class="dot active" data-img="../screenshot/Screenshot_20260508_094841.jpg"></button>
+        <button class="dot" data-img="../screenshot/Screenshot_20260508_152558.jpg"></button>
+        <button class="dot" data-img="../screenshot/Screenshot_20260508_152658.jpg"></button>
+        <button class="dot" data-img="../screenshot/Screenshot_20260508_152720.jpg"></button>
+        <button class="dot" data-img="../screenshot/Screenshot_20260508_152814.jpg"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── FEATURES ───────── -->
+  <section id="features">
+    <div class="section-label">✦ Core Features</div>
+    <h2 class="section-title">Everything You Need for Smarter Travel</h2>
+    <p class="section-sub">Powerful tools wrapped in a beautiful, intuitive interface.</p>
+
+    <div class="features-grid">
+
+      <div class="feature-card feature-large">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#1b5e20,#2e7d32);">
+          <span class="feature-icon">🗺️</span>
+        </div>
+        <h3>Trip Management</h3>
+        <p>Create and manage multiple trips. Set budgets, date ranges, destinations, and currencies per trip. Switch between trips instantly.</p>
+        <div class="feature-tags">
+          <span>Unlimited trips (Pro)</span>
+          <span>Active status</span>
+          <span>Remaining days</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#004d40,#00695c);">
+          <span class="feature-icon">💰</span>
+        </div>
+        <h3>Budget Tracking</h3>
+        <p>Real-time budget vs. spent visualization with a progress bar. See remaining balance, today's spend, and days left.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#e65100,#ef6c00);">
+          <span class="feature-icon">🏷️</span>
+        </div>
+        <h3>14+ Categories</h3>
+        <p>Food, Travel, Hotel, Shopping, Fuel, Transport, Entertainment, Medical, Bills & more. Add expenses by category in one tap.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#1565c0,#1976d2);">
+          <span class="feature-icon">💱</span>
+        </div>
+        <h3>Live Currency Conversion</h3>
+        <p>50+ currencies with live exchange rates. Assign a currency per trip and track multi-currency expenses effortlessly.</p>
+      </div>
+
+      <div class="feature-card feature-large">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#4a148c,#6a1b9a);">
+          <span class="feature-icon">📊</span>
+        </div>
+        <h3>Smart Summary & Analytics</h3>
+        <p>Visual spending breakdowns — daily averages, monthly summaries, yearly totals, and per-trip comparisons. Charts that actually tell a story.</p>
+        <div class="feature-tags">
+          <span>Daily average</span>
+          <span>Monthly view</span>
+          <span>Yearly total</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#b71c1c,#c62828);">
+          <span class="feature-icon">📅</span>
+        </div>
+        <h3>Multi-Day Expenses</h3>
+        <p>Log expenses that span multiple days — hotel stays, car rentals — and automatically calculate the per-day cost.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#00695c,#00897b);">
+          <span class="feature-icon">☁️</span>
+        </div>
+        <h3>Cloud Sync</h3>
+        <p>Sign in with Google and sync all your trips and expenses securely with Firebase — access your data across devices.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap" style="background: linear-gradient(135deg,#37474f,#455a64);">
+          <span class="feature-icon">🌙</span>
+        </div>
+        <h3>Dark Mode First</h3>
+        <p>Beautifully designed dark-first UI with light mode support. Premium glassmorphism cards and smooth animations.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────── HOW IT WORKS ───────── -->
+  <section id="how-it-works">
+    <div class="section-label">✦ Workflow</div>
+    <h2 class="section-title">Get Started in 3 Simple Steps</h2>
+    <p class="section-sub">From download to your first logged expense in under a minute.</p>
+
+    <div class="steps-container">
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Create Your Trip</h3>
+          <p>Add a trip with a name, destination, date range, budget, and your preferred currency. TripTally keeps each journey perfectly organized.</p>
+        </div>
+        <div class="step-img-wrap">
+          <img src="../screenshot/Screenshot_20260508_094841.jpg" alt="Create Trip Screen" />
+        </div>
+      </div>
+
+      <div class="step step-reverse">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Log Expenses Instantly</h3>
+          <p>Tap a category tile or the + button to open the Add Expense sheet. Enter amount, pick a category, add a note, and choose the payment method.</p>
+        </div>
+        <div class="step-img-wrap">
+          <img src="../screenshot/Screenshot_20260508_152658.jpg" alt="Add Expense Screen" />
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Get Smart Insights</h3>
+          <p>Head to the Summary tab for visual breakdowns — total spent, daily average, monthly and yearly summaries with beautiful charts.</p>
+        </div>
+        <div class="step-img-wrap">
+          <img src="../screenshot/Screenshot_20260508_152720.jpg" alt="Summary Screen" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── SCREENSHOTS ───────── -->
+  <section id="screenshots">
+    <div class="section-label">✦ Screenshots</div>
+    <h2 class="section-title">Beautiful Inside & Out</h2>
+    <p class="section-sub">Every screen is crafted for clarity, speed, and delight.</p>
+
+    <div class="screenshots-scroll">
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_152557.jpg" alt="TripTally Splash Screen" loading="lazy" />
+        <div class="screenshot-caption">Splash Screen</div>
+      </div>
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_094841.jpg" alt="TripTally Home Screen" loading="lazy" />
+        <div class="screenshot-caption">Home – Trip Dashboard</div>
+      </div>
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_152558.jpg" alt="TripTally Budget Overview" loading="lazy" />
+        <div class="screenshot-caption">Budget Overview</div>
+      </div>
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_152658.jpg" alt="TripTally Add Expense" loading="lazy" />
+        <div class="screenshot-caption">Add Expense</div>
+      </div>
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_152720.jpg" alt="TripTally Summary" loading="lazy" />
+        <div class="screenshot-caption">Summary & Analytics</div>
+      </div>
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_152750.jpg" alt="TripTally Settings" loading="lazy" />
+        <div class="screenshot-caption">Settings</div>
+      </div>
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_152802.jpg" alt="TripTally Account" loading="lazy" />
+        <div class="screenshot-caption">Account & Sync</div>
+      </div>
+      <div class="screenshot-item" onclick="openLightbox(this)">
+        <img src="../screenshot/Screenshot_20260508_152814.jpg" alt="TripTally Auth Screen" loading="lazy" />
+        <div class="screenshot-caption">Google Sign-In</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── VIDEO / MARKETING ───────── -->
+  <section id="video-section">
+    <div class="section-label">✦ See It In Action</div>
+    <h2 class="section-title">Watch the Demo</h2>
+    <p class="section-sub">A quick walkthrough of TripTally's core features.</p>
+    <div class="video-container">
+      <div class="video-placeholder" id="videoPH">
+        <div class="play-btn-wrap">
+          <div class="play-btn">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <p>Marketing Video</p>
+          <span>Drop your video link below to embed it</span>
+        </div>
+        <!-- Replace the src below with your actual YouTube/Drive embed URL -->
+        <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" ...></iframe> -->
+      </div>
+      <div class="video-note">
+        📌 To embed your video: replace the placeholder above with an <code>&lt;iframe&gt;</code> from YouTube, Google Drive, or Vimeo.
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── PRICING ───────── -->
+  <section id="pricing">
+    <div class="section-label">✦ Pricing</div>
+    <h2 class="section-title">Simple, Transparent Pricing</h2>
+    <p class="section-sub">Start free, upgrade when you need more power.</p>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">₹0 <span>/ forever</span></div>
+        <ul class="plan-features">
+          <li>✅ 3 trips</li>
+          <li>✅ 50 expenses per trip</li>
+          <li>✅ 7 spending categories</li>
+          <li>✅ Dark / Light mode</li>
+          <li>✅ Google Sign-In & Sync</li>
+          <li>✅ Manual currency selection</li>
+          <li>❌ Export (PDF/CSV)</li>
+          <li>❌ Achievement badges</li>
+          <li>❌ Premium themes</li>
+        </ul>
+        <a href="https://play.google.com/store" target="_blank" class="plan-btn plan-btn-outline">Download Free</a>
+      </div>
+
+      <div class="pricing-card pricing-card-pro">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">Coming Soon <span></span></div>
+        <ul class="plan-features">
+          <li>✅ Unlimited trips</li>
+          <li>✅ Unlimited expenses</li>
+          <li>✅ 20+ categories with custom icons</li>
+          <li>✅ Live currency conversion (API)</li>
+          <li>✅ Export to PDF / CSV</li>
+          <li>✅ Achievement badges</li>
+          <li>✅ 5+ premium themes</li>
+          <li>✅ Priority support</li>
+          <li>✅ All Free features</li>
+        </ul>
+        <a href="#download" class="plan-btn plan-btn-primary">Get Notified</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── DOWNLOAD / QR ───────── -->
+  <section id="download">
+    <div class="download-glow"></div>
+    <div class="download-content">
+      <div class="download-text">
+        <div class="section-label" style="margin:0 0 12px;">✦ Download Now</div>
+        <h2 class="section-title" style="text-align:left;">Ready to Travel Smarter?</h2>
+        <p class="section-sub" style="text-align:left;">Join thousands of smart travelers tracking their expenses with TripTally. Free to download, no credit card required.</p>
+        <div class="download-badges">
+          <a href="https://play.google.com/store" target="_blank" id="play-store-btn" class="play-badge">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.2.8.22 1.2.05l13.1-7.56-2.9-2.9L3.18 23.76zm16.1-9.3L5.44 6.24l-2.26 2.26 11.22 11.22 4.88-2.82a1.4 1.4 0 0 0 0-2.44zm-1.44-8.18L5.44 0c-.4-.17-.83-.15-1.2.05l11.4 11.4 2.2-2.17zm-13.7.26L2.83 7.8c-.5.28-.83.8-.83 1.4v5.6c0 .6.33 1.12.83 1.4l1.31.76 11.13-11.13L4.14 6.54z"/></svg>
+            <div>
+              <small>Get it on</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
+        <p class="dl-note">📱 Android 6.0+ required &nbsp;·&nbsp; Version 1.0.0</p>
+      </div>
+
+      <div class="qr-wrap">
+        <div class="qr-card">
+          <div class="qr-code" id="qrCanvas">
+            <!-- QR code generated by JS -->
+          </div>
+          <p class="qr-label">Scan to Download</p>
+          <p class="qr-url">play.google.com/store</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-icon">✈</div>
+        <span>TripTally</span>
+        <p>Track every journey, every expense.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#screenshots">Screenshots</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:contact@triptally.app">Email Us</a>
+          <a href="https://play.google.com/store" target="_blank">Google Play</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 TripTally. All rights reserved. Built with Flutter & Firebase.</p>
+    </div>
+  </footer>
+
+  <!-- ───────── LIGHTBOX ───────── -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="Screenshot" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
